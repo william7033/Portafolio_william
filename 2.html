@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Certificados</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" href="Nueva carpeta/logo sofware 1.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    
+
+
+        body {
+            background-color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 40px;
+            background-color: #185fac;
+            color: rgb(255, 255, 255);
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .project {
+            margin: 30px 0;
+            background-color: white;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            margin-top: 30px;
+            color: #007bff;
+        }
+        .about-title {
+            color: rgb(255, 255, 255); 
+            font-weight: bold;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+            margin: 0 10px; 
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .social-icon {
+            font-size: 4rem; 
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+            color: #0056b3;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+        }
+        .text-center-custom {
+            text-align: center;
+        }
+        .project img {
+            width: 100%; 
+            height: auto; 
+            max-width: 530px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        video {
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        .certificado-img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .certificado-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer; /* Cambiar cursor para indicar que se puede hacer clic */
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header"> 
+        <h1>Mis Certificados</h1> 
+        <p class="text-center-custom">Este espacio digital tiene un diseño donde se pueden 
+            visualisar cada uno de mis certificados obtenidos durante el año de 1° SOFT, 2°SOFT Y 3° SOFT 
+        </p>
+    </header>
+
+    
+
+
+    <section class="container my-5">
+        <h2>Certificados</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h3>Certificado 1</h3>
+                <img src="inpresion3d.png" alt="Certificado 1" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('inpresion3d.png')">
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Certificado 2</h3>
+                <img src="linux.png" alt="Certificado 2" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('linux.png')">
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Certificado 3</h3>
+                <img src="git.png" alt="Certificado 3" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('git.png')">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h3>Certificado 4</h3>
+                <img src="base de datos.png" alt="Certificado 4" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('base de datos.png')">
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Certificado 5</h3>
+                <img src="certificado1.png" alt="Certificado 5" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('certificados/2.jpg')">
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Certificado 6</h3>
+                <img src="certificado2.png" alt="Certificado 6" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('certificados/6.jpg')">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h3>Certificado 7</h3>
+                <img src="certificado3.png" alt="Certificado 7" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('certificados/7.jpg')">
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Certificado 8</h3>
+                <img src="certificado4.png" alt="Certificado 8" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('certificados/8.jpg')">
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Certificado 9</h3>
+                <img src="certificado5.png" alt="Certificado 9" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('certificados/9.jpg')">
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="text-center">
+            <div class="col-md-4 text-center">
+                <h3>Certificado 10</h3>
+                <img src="certificado6.png" alt="Certificado 10" class="certificado-img" data-toggle="modal" data-target="#certificadoModal" onclick="setModalImage('certificados/14.jpg')">
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="container text-center">
+        <h2>Contacto</h2>
+        <p class="justificado">Puedes conectarme a través de mis redes sociales:</p>
+        <p>
+            <a href="https://www.facebook.com/profile.php?id=100050047863624" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/cristofer0dj" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/william_alexander_m/?hl=es" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/William7033_?t=udg1jksSB1QuZEc0DljKeQ&s=09" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </p>
+    </section>
+    
